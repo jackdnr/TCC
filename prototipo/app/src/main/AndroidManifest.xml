@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prototipo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="CAC"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Prototipo">
+        <activity android:name=".telas.parque.TelaWiki"></activity>
+        <activity
+            android:name=".telas.parque.TelaFotoElemento"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".telas.parque.TelaListaElementos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".telas.parque.TelaListaParques"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".telas.parque.TelaParque"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".telas.parque.TelaCadastroElemento"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".telas.parque.TelaCadastroParques"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".telas.principais.TelaInicial"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".telas.principais.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
